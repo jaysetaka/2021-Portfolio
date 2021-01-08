@@ -84,7 +84,7 @@
               </i>
               Chetan M. Kumbhar
             </p>
-            <a href="#" class="button">Download CV</a>
+            <a href="./jabu CV.pdf" class="button" download>Download CV</a>
           </div>
         </div>
       </section>
@@ -220,7 +220,12 @@
 
       <!--========== DECORATION ==========-->
       <section class="decoration section bd-container" id="decoration">
-        <h2 class="section-title">Projects <br /></h2>
+        <h2 class="section-title">
+          Projects <br />
+          <i class="home_description_text">
+            Please note this section is still under construction
+          </i>
+        </h2>
 
         <div class="decoration__container bd-grid">
           <div class="decoration__data">
@@ -250,7 +255,12 @@
               class="decoration__img"
             />
             <h3 class="decoration__title">Covid 19 Data Visualization</h3>
-            <a href="#" class="button button-link">View App</a>
+            <a
+              href="https://blissful-mccarthy-03c09d.netlify.app/"
+              target="_blank"
+              class="button button-link"
+              >View App</a
+            >
           </div>
         </div>
         <div class="decoration__container bd-grid">
@@ -261,7 +271,12 @@
               class="decoration__img"
             />
             <h3 class="decoration__title">Apex Data Tracker</h3>
-            <a href="#" class="button button-link">View App</a>
+            <a
+              href="https://aqueous-everglades-75021.herokuapp.com/"
+              target="_blank"
+              class="button button-link"
+              >View App</a
+            >
           </div>
           <div class="decoration__data">
             <img
@@ -289,8 +304,13 @@
               alt=""
               class="decoration__img"
             />
-            <h3 class="decoration__title">Recipe Android/IOS App</h3>
-            <a href="#" class="button button-link">View App</a>
+            <h3 class="decoration__title">Client Website</h3>
+            <a
+              href="https://kind-shirley-906488.netlify.app/"
+              target="_blank"
+              class="button button-link"
+              >View App</a
+            >
           </div>
           <div class="decoration__data">
             <img
@@ -299,7 +319,12 @@
               class="decoration__img"
             />
             <h3 class="decoration__title">Blogging App</h3>
-            <a href="#" class="button button-link">View App</a>
+            <a
+              href="https://cryptic-tor-63529.herokuapp.com/"
+              target="_blank"
+              class="button button-link"
+              >View App</a
+            >
           </div>
           <div class="decoration__data">
             <img
@@ -308,7 +333,12 @@
               class="decoration__img"
             />
             <h3 class="decoration__title">Client Website</h3>
-            <a href="#" class="button button-link">View Site</a>
+            <a
+              href="https://www.lubmotorgroup.co.za/"
+              target="b_black"
+              class="button button-link"
+              >View Site</a
+            >
           </div>
         </div>
       </section>
@@ -321,11 +351,13 @@
             <p class="send__description">
               Send me your email address and I will get back to you ASAP
             </p>
-            <form action="">
+            <form action="POST" data-netlify="true">
               <div class="send__direction">
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Email Address"
+                  name="email"
+                  id="email"
                   class="send__input"
                 />
                 <a href="#" class="button">Send</a>
