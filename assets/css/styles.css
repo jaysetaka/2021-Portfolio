@@ -61,6 +61,40 @@ html {
   scroll-behavior: smooth;
 }
 
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--body-color);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid;
+  color: #c42130;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+  25% {
+    color: var(--first-color-send);
+  }
+  50% {
+    color: var(--first-color-alt);
+  }
+  75% {
+    color: var(--first-color-alt);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color-send: #161212;

@@ -20,6 +20,11 @@
     <title>Jabu Portfolio</title>
   </head>
   <body>
+    <!--========== LOADER ==========-->
+
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
       <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
@@ -414,6 +419,15 @@
 
       <p class="footer__copy">&#169; 2021 Swaart Digital. All right reserved</p>
     </footer>
+
+    <!--========== JQ ==========-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".loader-container").fadeOut(1000);
+      });
+    </script>
 
     <!--========== SCROLL REVEAL ==========-->
     <script src="https://unpkg.com/scrollreveal"></script>
